@@ -5,10 +5,11 @@ currently have an instance of the dashboard running (see root README).
 
 Note: These commands should be run at the root of the project.
 
-`npm e2e` (will open the Cypress )
+Open Cypress and select tests to run from the GUI
+`npm run e2e`
 
 Run Cypress in headless mode
-`npm e2e-headless`
+`npm run e2e-headless`
 
 
 ## Bugs Discovered
@@ -55,8 +56,9 @@ In the #budget div the text displays **$235,000** minimum recommended buget to 
 
 ## Manual test cases
 
-Card element
+## Card element
 
+### Test Case 1
 - Visit the dashboard http://localhost:3000/
 - Open the developer tools console
 - Click on the selector tool
@@ -65,22 +67,24 @@ Card element
 - Assert the label element has a color css property equal to #666
 
 
+### Test Case 2
 - Visit the dashboard http://localhost:3000/
 - Open the developer tools console
 - Click on the selector tool
-- Look for the card labeled "Budget" and inspect the <p> tag nested within 
-<div class="demographicStats" id="budget">**<p><strong>$235,000</strong> minimum recommended buget to reduce pay equity gap</p>**</div>
-- Assert the <p> tag has a font-size css property equal to 18pt
+- Look for the card labeled "Budget" and inspect the child p tag nested within
+- Assert the p tag has a font-size css property equal to 18pt
 
-Tab elements
+## Tab elements
 
+### Test Case 1
 - Visit the dashboard http://localhost:3000/
 - Open the developer tools console
 - Click on the selector tool
 - Look for the tab labeled "Gender" and select the element
-- Ensure the the button element has the .tab-active class applied
+- Ensure the button element has the .tab-active class applied
 - Assert the text of the button element has a font-size css property equal to 14pt
 
+### Test Case 2
 - Visit the dashboard http://localhost:3000/
 - Open the developer tools console
 - Click on the selector tool
